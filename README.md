@@ -8,6 +8,6 @@ Deployed website:
 [Here is a link to the deployed website](https://esmondkim.github.io/EsmondYKimPortfolio/index.html)
 
 Sceenshots
-![And a screenshot](/Images/portfolio1.jpg)
-![And a screenshot](/Images/portfolio2.jpg)
-![And a screenshot](/Images/portfolio3.jpg)
+![And a screenshot](/images/portfolio1.jpg)
+![And a screenshot](/images/portfolio2.jpg)
+![And a screenshot](/images/portfolio3.jpg)
