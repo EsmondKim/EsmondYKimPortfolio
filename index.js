@@ -5,6 +5,7 @@ $(document).ready(function () {
   //function to give appropriate greeting for Time of Day
   function timeGreetingText() {
     const timeCheck = moment().hours();
+    console.log("This is the time check const", timeCheck);
 
     switch (timeCheck) {
       case timeCheck < 12:
