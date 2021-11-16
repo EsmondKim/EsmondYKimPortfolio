@@ -20,8 +20,8 @@ $(document).ready(function () {
       case timeCheck > 21 && timeCheck < 24:
         $("#timeGreeting").text("Have a Wonderful Night!");
         break;
-      default:
-        $("#timeGreeting").text("Make today a great day!");
+      // default:
+      //   $("#timeGreeting").text("Make today a great day!");
     }
   }
   timeGreetingText();
