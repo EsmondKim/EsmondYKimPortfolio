@@ -5,6 +5,7 @@ $(document).ready(function () {
   //function to give appropriate greeting for Time of Day
   function timeGreetingText() {
     const timeCheck = moment().hours();
+    console.log("This is the timeCheck variable!", timeCheck);
     if (timeCheck < 12) {
       $("#timeGreeting").text("Good Morning!");
     } else if (timeCheck > 12 && timeCheck < 17) {
@@ -16,8 +17,6 @@ $(document).ready(function () {
     }
   }
   timeGreetingText();
-
-  console.log("This is the timeCheck variable!", timeCheck);
 
   function renderTime() {
     const formattedTime = moment().format("MMMM Do YYYY, h:mm:ss a");
