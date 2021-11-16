@@ -7,21 +7,14 @@ $(document).ready(function () {
     const timeCheck = moment().hours();
     console.log("This is the time check const", timeCheck);
 
-    switch (timeCheck) {
-      case timeCheck < 12:
-        $("#timeGreeting").text("Good Morning!");
-        break;
-      case timeCheck > 12 && timeCheck < 19:
-        $("#timeGreeting").text("Good Afternoon!");
-        break;
-      case timeCheck > 19 && timeCheck < 21:
-        $("#timeGreeting").text("Good Evening!");
-        break;
-      case timeCheck > 21 && timeCheck < 24:
-        $("#timeGreeting").text("Have a Wonderful Night!");
-        break;
-      // default:
-      //   $("#timeGreeting").text("Make today a great day!");
+    if (timeCheck < 12) {
+      $("#timeGreeting").text("Good Morning!");
+    } else if (timeCheck >= 12 && timeCheck < 18) {
+      $("#timeGreeting").text("Good Afternoon!");
+    } else if (timeCheck >= 18 && timeCheck < 21) {
+      $("#timeGreeting").text("Good Evening!");
+    } else {
+      $("#timeGreeting").text("Have a Wonderful Night!");
     }
   }
   timeGreetingText();
