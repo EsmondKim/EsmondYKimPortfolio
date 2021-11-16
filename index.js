@@ -17,6 +17,8 @@ $(document).ready(function () {
   }
   timeGreetingText();
 
+  console.log("This is the timeCheck variable!", timeCheck);
+
   function renderTime() {
     const formattedTime = moment().format("MMMM Do YYYY, h:mm:ss a");
     $("#dateTime").text("It is: " + formattedTime);
