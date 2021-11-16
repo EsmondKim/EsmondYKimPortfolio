@@ -20,17 +20,8 @@ $(document).ready(function () {
         $("#timeGreeting").text("Have a Wonderful Night!");
         break;
       default:
-      // code block
+        $("#timeGreeting").text("Make today a great day!");
     }
-    // if (timeCheck < 12) {
-    //   $("#timeGreeting").text("Good Morning!");
-    // } else if (timeCheck > 12 && timeCheck < 17) {
-    //   $("#timeGreeting").text("Good Afternoon!");
-    // } else if (timeCheck > 17 && timeCheck < 21) {
-    //   $("#timeGreeting").text("Good Evening!");
-    // } else {
-    //   $("#timeGreeting").text("Have a Wonderful Night!");
-    // }
   }
   timeGreetingText();
 
@@ -39,6 +30,4 @@ $(document).ready(function () {
     $("#dateTime").text("It is: " + formattedTime);
   }
   renderTime();
-
-  //$(document).ready Closing Brackets
 });
